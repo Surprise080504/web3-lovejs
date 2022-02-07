@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  $important:rgb(136, 39, 143);
+  $important-guide: rgb(67, 238, 0);
+      .staking-container{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items:center;
+        text-align:center;
+        background: url('../public/images/backgrounds/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      
+      h1{
+        font-family: 'Neucha', cursive;
+        font-size:12rem;
+        color:$important;
+        margin-top:15px;
+        font-weight:200;
+      }
+
+      .subtitle{
+        font-family: 'Neucha', cursive;
+        font-size:3rem;
+        width:30%;
+        color:$important;
+      }
+
+       .text{
+        padding:50px;
+      }
+      
+      .wallet-info_container{
+        width:50%;
+        min-width:520px;
+        height:150px;
+        background:white;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        border-radius:30px;
+
+        margin-bottom:70px;
+      }
+
+      .hearth-claim{
+        cursor: pointer;
+        margin-bottom:25px;
+        width:300px;
+        height:250px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wallet-info_container .wallet-info{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        justify-content:center;
+        width:33%;
+
+        h4{
+            font-weight:400;
+        }
+        h5{
+            font-size:3rem;
+            color:$important;
+            font-family: 'Neucha', cursive;
+        }
+      }
+
+      .wallet-claim{
+          width:33%;
+        
+          h4{
+              font-weight:400;
+          }
+          h5{
+              font-size:3rem;
+              color:$important;
+              font-family: 'Neucha', cursive;
+          }
+      }
+
+      .subtitle-wallet{
+        font-size:1.5rem;
+        width:50%;
+        margin-bottom:50px;
+      }
+
+      .staking-info_container{
+       width: 100%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+        h2{
+            color:$important;
+            font-size:5rem;
+            font-family: 'Neucha', cursive;
+            font-weight:200;
+        }
+
+        .staking-text{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px auto 25px auto;
+            width: 50%;
+            text-align: left;
+            .hearth{
+                background-image:url('../public/images/assets/hearth.png');
+                width:60px;
+                height:60px;
+                background-size: cover;
+            }
+
+            p{
+                margin-left:15px;
+                width:50%;
+                font-weight: 500;
+            }
+
+        }
+      }
+
+      .text-warning{
+        font-weight: 300;
+        font-size: 1.2rem;
+        width:70%;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+      .earn-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background:rgb(44, 44, 44);
+        margin-top:100px;
+        h2{
+          color:$important-guide;
+          font-size:3rem;
+          font-family: 'Neucha', cursive;
+          font-weight:300;
+          padding-top:50px;
+        }
+        .first-container{
+          width: 70%;
+          display: flex;
+          justify-content: space-evenly;
+          padding-top:100px;
+
+          .earn-container_info{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+
+            .earn-container_icon{
+
+             &-first {
+              background:url('../public/images/assets/staking.png');
+              background-size: cover;
+              width:100px;
+              height:100px;
+            }
+
+            &-second{
+              background:url('../public/images/assets/discord.svg');
+              background-size: 100%;
+              width:100px;
+              height:100px;
+            }
+
+            &-third{
+              background:$important-guide;
+              background-size: cover;
+              width:100px;
+              height:100px;
+            }
+
+            }
+
+            p{
+              color:white;
+              font-size:1.2rem;
+              margin-top:15px;
+            }
+          }
+        }
+        .second-container{
+          width: 70%;
+          display: flex;
+          justify-content: space-evenly;
+          padding-top:100px;
+          padding-bottom:100px;
+          .earn-container_info{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+
+            .earn-container_icon{
+              width:100px;
+              height: 100px;
+              background:$important-guide;
+
+            &-first{
+              background:url('../public/images/assets/009-removebg.png');
+              background-size: 100%;
+              width:100px;
+              height:100px;
+            }
+            &-second{
+              background:url('../public/images/assets/002-removebg.png');
+              background-size: 100%;
+              width:100px;
+              height:100px;
+            }
+            &-third{
+              background: $important-guide;
+              background-size: 100%;
+              width:100px;
+              height:100px;
+            }
+            }
+
+            p{
+              color:white;
+              font-size:1.2rem;
+              margin-top:15px;
+            }
+          }
+        }
+      }
+    }

@@ -1,0 +1,19 @@
+{
+  "name": "apache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "Blockworld",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.6.2",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.none{
+  display:none !important;
+}
+// $oceanblue: #25262A; 
+
+// $gray: rgb(55,65,81);
+
+
+$background: rgb(246, 183, 200);
+$navbar: #25262A;
+$active: rgb(136, 39, 143);
+$active-light: rgb(159, 47, 167);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    left:15px;
+    width: 120px;
+    height: 120px;
+    background: url('../public/images/backgrounds/logo.gif');
+    background-size: cover;
+    background-position: center;
+    z-index:160;
+}
+
+main{
+    z-index: 50;
+    height: 100vh;
+    width: 100%;
+    background:url('../public/images/backgrounds/background.jpg');
+        .container-love{
+            height: 25vh;
+            .text-container{
+            padding-top: 30px;
+            padding-left: 70px;
+                h1{
+                    font-family: 'Neucha', cursive;
+                    color:$active;
+                    font-size: 4rem;
+                    font-weight: 300;
+                }
+                
+                p{
+                    font-family: 'Neucha', cursive;
+                    width: 50%;
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+            }
+          }
+          .container-flex{
+          position: absolute;
+          display: flex;
+          width: 100%;
+          aside{
+              background:white;
+              width: 230px;
+              height: 250px;
+              text-align: left;
+              position: relative;
+              left:70px;
+              top: 50px;
+              border-radius:10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              
+              li{
+                padding-left: 20px;
+                list-style: none;
+                cursor: pointer;
+                transition: 450ms all;
+                &:hover{
+                  height: 30px;
+                  background-color: $active;
+                  width: 80%;
+                  margin:0 auto;
+                  border-radius: 5px;
+                  color:white;
+                  display: flex;
+                  align-items: center;
+                }
+              }
+              .aside-active{
+                  background-color: $active;
+                  width: 80%;
+                  margin: 0 auto;
+                  border-radius: 5px;
+                  height: 40px;
+                  color:white;
+                  display: flex;
+                  align-items: center;
+              }
+          }
+      
+          .nft-container{
+              margin-left: 150px;
+              width: 80%;
+              height:55vh;
+              display: flex;
+              position: relative;
+              justify-content: center;
+              align-items: center;
+              overflow-y: scroll;
+              top: 50px;
+              gap: 30px;
+              flex-wrap: wrap;
+          
+          &::-webkit-scrollbar {
+              width: 10px;
+              height: 10px;
+          }
+              
+              .nft-item{
+                  width: 290px;
+                  height: 440px;
+                  border-radius: 10px;
+                  background-color: rgb(255, 255, 255);
+                  display: flex;
+                  flex-direction: column;
+                  padding:15px;
+                  
+                  img{
+                      border-radius: 10px;
+                      margin: 0 auto;
+                      margin-top: 10px;
+                  }
+      
+                  h5{
+                      font-size: 1rem;
+                      font-weight: 400;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 12px;
+                  }
+      
+                  .button-price{
+                      margin-top: 25px;
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      justify-content: space-between;
+                      margin-left: 12px;
+                      
+                      button{
+                          width: 120px;
+                          height: 40px;
+                          border-radius: 10px;
+                          border: none;
+                          background-color: $active;
+                          color: white;
+                          transition: 200ms;
+                          cursor: pointer;
+                      &:hover{
+                          background-color: $active-light;
+      
+                      }
+                      }
+                      }
+      
+                      p{
+                          position: relative;
+                          right: 30px;
+                          font-weight: 600;
+                      }
+                  }
+              }
+          }
+        
+        
+        .container-love{
+            height: 25vh;
+
+            .text-container{
+            padding-top: 30px;
+            padding-left: 70px;
+                h1{
+                    font-family: 'Neucha', cursive;
+                    color:$active;
+                    font-size: 4rem;
+                    font-weight: 300;
+                }
+                
+                p{
+                    font-family: 'Neucha', cursive;
+                    width: 50%;
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+            }
+        
+        }
+    }
+
+
+    //Globales
+
+    .nav-active{
+        margin-top:5px;
+        border-bottom:rgb(140, 0, 175) solid 5px;
+    }
+    
+    .container-boton{
+        display:none;
+        z-index:160;
+        margin-right:15px;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 3px solid white;
+
+    }
+    
+    .container-boton .boton{
+        background-color: white;
+        width: 30px;
+        height: 5px;
+        border-radius: 50cm;
+    }
+    .container-boton .boton::before,
+    .container-boton .boton::after{
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 30px;
+        height: 5px;
+        border-radius: 50cm;
+        transition: 300ms ease;
+    }
+    .container-boton .boton::before{
+        transform: translateY(11px);
+    }
+    .container-boton .boton::after{
+        transform: translateY(-11px);
+    }
+    .container-boton.active .boton{
+      background:transparent;
+    }
+    
+    .container-boton.active .boton::before{
+        transform: rotate(45deg);
+    }
+    
+    .container-boton.active .boton::after{
+        transform: rotate(-45deg);
+    }
+
+    @media (max-width:1024px){
+        .container-boton{
+            display:flex;
+        }
+    }
