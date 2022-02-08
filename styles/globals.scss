@@ -31,7 +31,7 @@ $active-light: rgb(159, 47, 167);
 
 main{
     z-index: 50;
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     background:url('../public/images/backgrounds/background.jpg');
         .container-love{
@@ -255,5 +255,60 @@ main{
     @media (max-width:1024px){
         .container-boton{
             display:flex;
+        }
+        main{
+            height: 195vh !important;
+        }
+        .container-love{
+            height: 30vh !important;
+            margin: 0 auto;
+            .text-container{
+                text-align: center;
+                padding: 25px 0 0 0 !important;
+                p{
+                    width: 75% !important;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+        .container-flex{
+            flex-direction: column;
+            aside{
+                // width: 230px;
+                // height: 250px;
+                // text-align: left;
+                // position: relative;
+                // left:70px;
+                // top: 50px;
+                // border-radius:10px;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-around; 
+                // background:white;
+
+                // padding: 0 !important;
+                // margin: 0 !important;
+                margin: 0 auto;
+                width: 75% !important;
+
+                left: 0 !important;
+                top: 0 !important;
+                li{
+                    width: 80%;
+                    margin: 0 auto;
+                    .aside-active{
+                        width: 100% !important;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .nft-container{
+            top: 15px !important;
+            padding: 0 !important;
+            height: 500px !important;
+            margin: 0 auto !important;
+            height: 710px !important;
         }
     }
