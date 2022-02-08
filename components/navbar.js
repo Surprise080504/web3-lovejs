@@ -161,8 +161,11 @@ const navbar = ({ classStaking, classShop }) => {
                     
             @media(max-width:1024px){
                 .container-nav{
-                    display:none;
+                    display: none;
                     z-index:149;
+                    li{
+
+                    }
                 }
                 
                 .container-boton{

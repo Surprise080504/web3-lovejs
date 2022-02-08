@@ -31,7 +31,7 @@ $active-light: rgb(159, 47, 167);
 
 main{
     z-index: 50;
-    height: 105vh;
+    height: 100vh;
     width: 100%;
     background:url('../public/images/backgrounds/background.jpg');
         .container-love{
@@ -55,7 +55,7 @@ main{
             }
           }
           .container-flex{
-          position: absolute;
+        //   position: absolute;
           display: flex;
           width: 100%;
           aside{
@@ -102,7 +102,7 @@ main{
           .nft-container{
               margin-left: 150px;
               width: 80%;
-              height:55vh;
+              height:50vh;
               display: flex;
               position: relative;
               justify-content: center;
@@ -257,18 +257,22 @@ main{
             display:flex;
         }
         main{
-            height: 195vh !important;
+            height: 160vh !important;
         }
         .container-love{
-            height: 30vh !important;
             margin: 0 auto;
             .text-container{
                 text-align: center;
                 padding: 25px 0 0 0 !important;
+                height: 100% !important;
+                h1{
+                    font-size: 2rem !important;
+                }
                 p{
                     width: 75% !important;
                     text-align: center;
                     margin: auto;
+                    font-size: 15px !important;
                 }
             }
         }
@@ -291,12 +295,14 @@ main{
                 // margin: 0 !important;
                 margin: 0 auto;
                 width: 75% !important;
-
                 left: 0 !important;
                 top: 0 !important;
+                text-align: center !important;
                 li{
                     width: 80%;
+                    padding-left: 0;
                     margin: 0 auto;
+                    justify-content: center !important;
                     .aside-active{
                         width: 100% !important;
                         margin: 0 auto;
@@ -307,8 +313,35 @@ main{
         .nft-container{
             top: 15px !important;
             padding: 0 !important;
-            height: 500px !important;
+            height: 75vh !important;
             margin: 0 auto !important;
-            height: 710px !important;
+        }
+    }
+
+    @media (max-width: 425px){
+        .nft-item{
+            width: 90% !important;
+            margin: 0 auto; 
+        }
+        .nft-container{
+            width: 90% !important;
+            margin: 0 auto;
+        }
+        .container-flex{
+            aside{
+                width: 95% !important;
+            }
+        }
+    }
+    @media (max-width: 330px){
+        .container-love{
+            .text-container{
+                h1{
+                    font-size: 2rem !important;
+                }
+                p{
+                    font-size: 14px !important;
+                }
+            }
         }
     }
