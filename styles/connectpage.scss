@@ -1,0 +1,31 @@
+
+.connect-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #25262a;
+    height: 100vh;
+    .info{
+        text-align: center;
+        color: white;
+    }
+    .btn{
+        width: 350px;
+        // border: 1px solid #88278f;
+        height: 75px;
+        margin: 25px auto;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        &.metamask{
+            background-color: rgba(217,121,35, 0.95);
+
+        }
+        &.trustwallet{
+            background-color: rgba(51,117,187, 0.95);
+        }
+    }
+}
