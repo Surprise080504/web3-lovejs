@@ -77,7 +77,6 @@ const navbar = ({ classStaking, classShop }) => {
                 height: 120px;
                 z-index:160;
             }
-
             .responsive-nav_container{
                 width:100%;
                 background-color: #25262A;
@@ -87,13 +86,11 @@ const navbar = ({ classStaking, classShop }) => {
                 display:none;
                 transition: all 0.5s;
             }
-
             .container-nav{
                 display:flex;
                 justify-content: space-between;
                 align-items: center;
             }
-
             ul{
                 display: flex;
                 justify-content: space-around;
@@ -103,29 +100,24 @@ const navbar = ({ classStaking, classShop }) => {
                 border-radius: 30px;
                 margin-right:110px;
             }
-
             li{
                 display: flex;
                 align-items: center;
                 list-style: none;
                 justify-content: space-evenly;
             }
-
             a{
                 text-decoration: none;
                 color: black;
                 font-size: 1.1rem;
                 font-weight: 400;
             }
-
             a:hover{
                 color: #25262A;
             }
-
             .active-nav{
                 position: relative;
             }
-
             .active-nav::after{
                 content: '';
                 position: absolute;
@@ -137,7 +129,6 @@ const navbar = ({ classStaking, classShop }) => {
                 top: 33px;
                 z-index:510;
             }
-
             .redes{
                 display: flex;
                 justify-content: space-evenly;
@@ -149,22 +140,18 @@ const navbar = ({ classStaking, classShop }) => {
                 position: relative;
                 right: 40px;
             }
-
             .redes a{
                 display:flex;
             }
-
             .container-boton{
                 display:none !important;
             }
-
                     
             @media(max-width:1024px){
                 .container-nav{
                     display: none;
                     z-index:149;
                     li{
-
                     }
                 }
                 
@@ -172,18 +159,14 @@ const navbar = ({ classStaking, classShop }) => {
                     display: flex;
                     z-index:150;
                 }
-
                 .responsive-nav_container{
                     display:flex;
                     transform:translateY(-100%);
                     width:100%;
                 }
-
-
                 .translate{
                     transform:translateY(0);
                 }
-
                 .menu-responsive_items{
                     width:100%;
                     display:flex;
@@ -193,8 +176,6 @@ const navbar = ({ classStaking, classShop }) => {
                 }
             
             }
-
-
         `}</style>
         </nav>
     )

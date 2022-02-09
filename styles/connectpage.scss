@@ -75,3 +75,25 @@
         
     }
 }
+
+@media (max-width: 900px){
+    .btn{
+        width: 50vw !important;
+    }
+}
+@media (max-width: 500px){
+    .info{
+        font-size: 1rem !important;
+    }
+    .btn{
+        font-size: 0.6rem !important;
+    }
+}
+@media (max-width: 390px){
+    .btn{
+        flex-direction: column !important;
+        height: 150px !important ;
+    }
+
+
+}

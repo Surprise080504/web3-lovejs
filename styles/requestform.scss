@@ -1,0 +1,103 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    background: url('../public/images/backgrounds/background.jpg') no-repeat center;
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    // align-items: center;
+}
+.article{
+    width: 100%;
+    text-align: center;
+	position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .header{
+        h1{   
+            font-size: 3rem;
+            font-weight: 1000;
+            letter-spacing: 5px;
+            text-align: center;
+            color: #fff;
+            margin: 100px 0 25px 0;
+        }
+    }
+    .form{
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // background-color: red;
+    }
+    .input{
+        padding: 10px 0;
+        text-align: center;
+        color: black;
+        border: none;
+        // border: 2px solid black;
+        margin: 10px 5px;
+        border-radius: 8px;
+        &::placeholder{
+            color: black;
+        }
+    }
+    .discord-container{
+        width: 100%;
+        text-align: center;
+        .input-discord_name, .input-discord_tag{
+            width: 25%;
+            margin: 5px 15px;
+        }
+        .input-discord_tag::-webkit-inner-spin-button,.input-discord_tag::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+        } 
+    }
+    .input-submit{
+        cursor: pointer;
+        background-color: #8c00af;
+        // border: 2px solid black;
+        width: 20%;
+        margin: 25px auto;
+        color: white;
+    }
+}
+
+@media (max-width: 1024px){
+    .input{
+        width: 100%;
+    }
+    .discord-container{
+        .input-discord_name, .input-discord_tag{
+            width: 100% !important;
+            margin: 10px 5px !important;
+        }
+    }
+    .input-submit{
+        width: 45% !important;
+    }
+}
+@media (max-width: 550px){
+    .header{
+        h1{
+            font-size: 2rem !important;
+        }
+    }
+    .form{
+        width: 90% !important;
+    }
+    .input-submit{
+        width: 65% !important;
+    }
+}
+@media (max-width: 320px){
+    .header{
+        h1{
+            font-size: 1.5rem !important;
+        }
+    }
+}
