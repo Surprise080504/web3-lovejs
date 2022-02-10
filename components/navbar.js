@@ -145,7 +145,7 @@ const navbar = ({ classStaking, classShop }) => {
                 display:flex;
             }
             .container-boton{
-                display:none !important;
+                display:none;
             }
                     
             @media(max-width:1024px){

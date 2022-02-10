@@ -32,8 +32,8 @@ export default function Home() {
           <div className="info">
             <h1>Log in with wallet</h1>
           </div>
-          <button onClick={connectToMetamask} id="connect" className="btn metamask">
-            <Image className="btn-ico" src={Metamask} width="90px" height="90px" alt='' />
+          <button onClick={connectToMetamask} id="connect " className="btn metamask">
+            <Image className=" btn-ico" src={Metamask} width="90px" height="90px" alt='' />
             <h2>Connect with metamask</h2>
           </button>
           <button id="connect" className="btn trustwallet">
