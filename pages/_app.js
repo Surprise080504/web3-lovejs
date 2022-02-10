@@ -3,7 +3,8 @@ import '../styles/staking.scss'
 import '../styles/connectpage.scss'
 import '../styles/admin.scss'
 import '../styles/requestform.scss'
-import 'tailwindcss/tailwind.css'
+
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

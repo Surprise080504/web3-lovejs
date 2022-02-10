@@ -50,7 +50,6 @@ const navbar = ({ classStaking, classShop }) => {
             </div>
 
             <div id="menu-responsive_container" className="responsive-nav_container">
-
               <div className="menu-responsive_items">
                 <ul className="nav-item">
                     <li><a href="#">Collection</a></li>
@@ -144,9 +143,7 @@ const navbar = ({ classStaking, classShop }) => {
             .redes a{
                 display:flex;
             }
-            .container-boton{
-                display:none;
-            }
+            
                     
             @media(max-width:1024px){
                 .container-nav{
@@ -158,7 +155,7 @@ const navbar = ({ classStaking, classShop }) => {
                 
                 .container-boton{
                     display: flex;
-                    z-index:150;
+                    z-index:250;
                 }
                 .responsive-nav_container{
                     display:flex;

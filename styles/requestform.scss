@@ -42,17 +42,17 @@
         font-size: 1rem;
         letter-spacing: 2px;
         padding: 0;
-        .input{
-            padding: 10px 0;
-            text-align: center;
-            color: black;
-            border: none;
-            // border: 2px solid black;
-            margin: 10px 5px;
-            border-radius: 8px;
-            &::placeholder{
-                color: rgb(134, 134, 134);
-            }
+    }
+    .input{
+        padding: 10px 0;
+        text-align: center;
+        color: black;
+        border: none;
+        // border: 2px solid black;
+        margin: 10px 5px;
+        border-radius: 8px;
+        &::placeholder{
+            color: rgb(134, 134, 134);
         }
     }
     .input-submit{
