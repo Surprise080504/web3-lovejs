@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import DiscordLogo from '../public/images/redes/discord.png'
 import TwitterLogo from '../public/images/redes/twitter.png'
@@ -32,8 +33,8 @@ const navbar = ({ classStaking, classShop }) => {
             <div className="container-nav">
                 <ul className="nav-item">
                     <li><a href="#">Collection</a></li>
-                    <li className={classStaking}><a href="/staking">Staking</a></li>
-                    <li className={classShop}><a href="/shop">Shop</a></li>
+                    <li className={classStaking}><Link href="/staking"><a>Staking</a></Link></li>
+                    <li className={classShop}><Link href="/shop"><a >Shop</a></Link></li>
                     <li><a href="#">Downloads</a></li>
                 </ul>
 
@@ -44,8 +45,8 @@ const navbar = ({ classStaking, classShop }) => {
                 </section>
 
             </div>
-            <div id="container-boton" onClick={() => cositas()} class="container-boton">
-                <div class="boton"></div>
+            <div id="container-boton" onClick={() => cositas()} className="container-boton">
+                <div className="boton"></div>
             </div>
 
             <div id="menu-responsive_container" className="responsive-nav_container">
@@ -53,8 +54,8 @@ const navbar = ({ classStaking, classShop }) => {
               <div className="menu-responsive_items">
                 <ul className="nav-item">
                     <li><a href="#">Collection</a></li>
-                    <li className={classStaking}><a href="/staking">Staking</a></li>
-                    <li className={classShop}><a href="/shop">Shop</a></li>
+                    <li className={classStaking}><Link href="/staking"><a>Staking</a></Link></li>
+                    <li className={classShop}><Link href="/shop"><a>Shop</a></Link></li>
                     <li><a href="#">Downloads</a></li>
                 </ul>
 

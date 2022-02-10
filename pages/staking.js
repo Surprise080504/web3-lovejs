@@ -28,7 +28,7 @@ const staking = () => {
           </div>
 
           <div className="hearth-claim">
-            <Image src={ClaimButtom} width="300px" height="300px" />
+            <Image src={ClaimButtom} width="300px" height="300px" alt="claim-btn" />
           </div>
 
           <div className="wallet-claim">
@@ -49,10 +49,10 @@ const staking = () => {
             <div className="hearth"></div>
             <p>After the initial distribution. Every Lonely Heart that has
               been staked will generate 10 $LOVE tokens per day and
-              can be claimed at the holder's discretion.</p>
+              can be claimed at the holders discretion.</p>
           </div>
-          <div className="staking-text">
-            <div className="hearth"></div>
+          <div className="staking-text"></div>
+            <div className="hearth">
             <p>Holders will be able to use their $LOVE tokens to buy
               items in the shop such as love potions and NFTs.
             </p>

@@ -40,11 +40,11 @@
         width: 25vw;
         position: relative;
         cursor: pointer;
-        border: 3px solid #f4861a;
+        
         height: 100px;
         margin: 25px auto;
         border-radius: 15px;
-        color: #f4861a;
+        
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -61,16 +61,24 @@
         &.metamask{
             // background-color: rgba(179, 97, 26, 0.849);
             background-color: rgb(37,38,42);
-
+            color: #f4861a;
+            border: 3px solid #f4861a;
+            
         }
         &.trustwallet{
-            background-color: rgba(51,117,187, 0.95);
+            // background-color: rgba(51,117,187, 0.95);
+            background-color: rgb(37,38,42);
+            color: #3375bb;
+            border: 3px solid #3375bb;
             img{
                 border-radius: 100%;
             }
         }
         &.coinbase{
-            background-color: rgba(0, 60, 179, 0.609);
+            // background-color: rgba(0, 60, 179, 0.609);
+            background-color: rgb(37,38,42);
+            color: white;
+            border: 3px solid white;
         }
         
     }

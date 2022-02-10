@@ -30,7 +30,7 @@
         margin: 0 auto;
         height: 250px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         // background-color: red;
     }
@@ -64,7 +64,7 @@
         text-align: center;
         border: none;
         border-radius: 8px;
-        margin: 25px auto;
+        margin: 35px 0 0 7px;
         color: white;
         font-size: 1rem;
         letter-spacing: 2px;

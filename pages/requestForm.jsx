@@ -1,11 +1,8 @@
 import React from 'react';
-import Navbar from '../components/navbar.js'
 const requestForm = () => {
   return (
     <main className="main">
-      <Navbar
-        classShop="nav-active"
-      />
+
       <article className="article">
 
       <div className="article-subcontainer">
