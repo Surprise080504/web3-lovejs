@@ -1,44 +1,170 @@
 .admin_main-container{
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    background-color: #4F6D7A;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    .user-navigation{
-        width: 20%;
-        margin: 0 25px 0 50px;
-        // padding: 10px 0;
-        background-color: #42273B;
-        display: flex;
+    .main-container{
+        width: 100%;
+        height: 100vh;
+        background: url('../public/images/backgrounds/background.jpg') no-repeat center;
         text-align: center;
-        flex-direction: column;
-        .user-navigation_info{
-            background-color: #593F54;
-            width:100%;
-            height: 30%;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .user-navigation{
+            width: 20%;
+            margin: 50px 25px 50px 50px;
+            border-radius: 15px;
+            // padding: 10px 0;
+            background-color: rgba(37,38,42,1);
             display: flex;
-            justify-content: center;
-            h3{
-                padding: 40px 0;
-                font-size: 2rem;
+            text-align: center;
+            flex-direction: column;
+            .user-navigation_info{
+                // background-color: rgba(126, 130, 149, 0.2);
+                // border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border-bottom: 1px solid rgb(104, 104, 104);
+                margin: 0px 30px 20px 30px;
+                padding: 10px 0;
+                h3{
+                    padding: 5px 0 10px 0;
+                    font-size: 2rem;
+                    letter-spacing: 5px;
+                    color: white;
+                }
+                .users-pagination{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    button{
+                        cursor:pointer;
+                        width: 50%;
+                        padding: 5px 0;
+                        margin: 5px 5px;
+                        border-radius: 15px;
+                        background-color: rgba(37,38,42,1);
+                        border: 2px solid rgb(245,176,194);
+                        color: white;
+                        font-size: 0.6rem;
+                        font-weight: 600;
+                        // position: relative;
+                        // top: 50vh;
+                        transition: 500ms;
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 1);
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .user_a{
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-size: 1rem;
+                // padding: 10px 0 0px 0;
+                padding: 5px;
+                transition: 250ms;
+                &:hover{
+                    font-size: 1.5rem;
+                    color: #acacac;
+                }
+            }
+            
+        }
+        .user-info{
+            background-color: rgba(37,38,42,1);
+            width: 80%;
+            margin: 50px 50px 50px 25px;
+            text-align: left;
+            .info-container{
+                color:white;
+                width:85%;
+                margin: 0 auto;
+                padding: 15px 0;
+            }
+            .user-data{
+                margin: 15px 0;
+                font-size: 1.5rem;
+                font-weight: 800;
+                letter-spacing: 2px;
+                label{
+                    font-weight: 250;
+                    padding: 0 25px;
+                    color:rgb(255, 225, 189);
+                }
+            }
+            .ban-btn{
+                width: 90%;
+                cursor: pointer;
+                background-color: rgb(255, 0, 0);
+                color: white;
+                border: none;
+                border-radius: 15px;
+                transition: 500ms;
+                &:hover{
+                    background: rgb(119, 0, 0);
+                }
+
             }
         }
-        .user_a{
-            background-color: #70566D;
-            height: 70%;
-            padding: 40px 0;
+    }   
+}
+@media (max-width: 1024px){
+    .users-pagination{
+        flex-direction: column !important;
+        button{
+            width: 100% !important;
+        }
+
+    }
+}
+@media (max-width: 700px){
+    .main-container{
+        height: 100% !important;
+        flex-direction: column !important;
+        .user-navigation{
+            width: 90% !important;
+            height: 50vh;
+            margin: 15px auto !important;
+            flex-direction: column !important;
+            .user-navigation-info{
+                width: 10% !important;
+                margin: 0 !important;
+                h3{
+                    margin: 0 !important;
+                }
+                .users-pagination{
+                    button{
+                        margin: 10px 0 !important;
+                    }
+                }
+            }
+        }
+        .user-info{
+            width: 90% !important;
+            margin: 0 auto !important;
+            border-radius: 15px;
+            .info-container{
+                .user-data{
+                    font-size: 1rem !important;
+                }
+                .ban-btn{
+                    width: 100% !important;
+                }
+            }
         }
     }
-    .user-info{
-        width: 80%;
-        margin: 0 50px 0 25px;
-        background-color: #ABC8C0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
+}
+@media(max-width:450px){
+    .main-container{
+        .user-info{
+            .info-container{
+                .user-data{
+                    font-size: 0.8rem !important;
+                }
+            }
+        }
     }
-
 }
