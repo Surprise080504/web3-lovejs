@@ -169,12 +169,11 @@ const navbar = ({ classStaking, classShop }) => {
                 }
                 .menu-responsive_items{
                     width:100%;
-                    display:flex;
+                    display:flex !important;
                     flex-direction:column;
                     justify-content:space-between;
                     align-items:center;
                 }
-            
             }
         `}</style>
         </nav>

@@ -14,11 +14,10 @@ const requestForm = () => {
         </div>
         <form className="form" action="">
           {/* <input className="input input-name" placeholder="Name" id="name" type="text" /> */}
-          <input placeholder="Opensea name" className="input input-opensea_id" id="opensea-tag" type="text" />
-          <div className="discord-container">
-            <input className="input input-discord_name" placeholder="Discord name" id="discord-name" type="text" />
-            <input className="input input-discord_tag" placeholder="Discord tag" id="discord-tag" type="number" min="1" max="9999" />
-          </div>
+          <label className="label" htmlFor="">Opensea profile URL<input placeholder="https://opensea.io/Geralt" className="input input-opensea_id" id="opensea-tag" type="text" />
+          </label>
+          <label className="label" htmlFor="">Discord Name<input className="input input-discordName" placeholder="Geralt#3389" id="discord-nickname" type="text"/>
+          </label>
           <button className="input input-submit" type="submit">Send</button>
         </form>
       </div>
