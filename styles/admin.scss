@@ -9,15 +9,15 @@
         flex-direction: row;
         justify-content: space-around;
         .user-navigation{
-            width: 20%;
-            margin: 50px 25px 50px 50px;
-            border-radius: 15px;
             // padding: 10px 0;
             background-color: rgba(37,38,42,1);
-            display: flex;
+            // display: flex;
             text-align: center;
             flex-direction: column;
+            width: 20%;
+            margin: 150px 25px 50px 50px;
             .user-navigation_info{
+                border-radius: 15px;
                 // background-color: rgba(126, 130, 149, 0.2);
                 // border-radius: 15px;
                 display: flex;
