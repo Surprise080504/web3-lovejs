@@ -1,12 +1,21 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useMutation, gql, useQuery } from '@apollo/client'
 
+
+const NEW_ACCOUNT = gql`
+  mutation nuevoUsuario($input: UsuarioInput) {
+    nuevoUsuario(input: $input) {
+      discord
+      opensea
+    }
+  }
+`;
 
 const requestForm = () => {
-
-  //Validacion del formulario
-
+  const [ nuevoUsuario ] = useMutation(NEW_ACCOUNT);
+  //Validacion de formulario y cuenta
   const formik = useFormik({
     initialValues: {
       opensea:'',
@@ -16,23 +25,32 @@ const requestForm = () => {
       opensea: Yup.string().required('Opensea URL is required'),
       discord: Yup.string().required('DiscordTag is required'),
     }),
-    onSubmit: values => {
-      console.log('enviando');
-      console.log(values);
+    onSubmit: async values => {
+      const { discord, opensea } = values
+      try{
+        console.log({data})
+        const { data } = await nuevoUsuario({
+          variables: {
+            input: {
+              opensea,
+              discord,
+            }
+          }
+        });
+        console.log(data)
+      }catch(error){
+        console.log(' error ',error);
+      }
     }
   });
-
   return (
     <main className="main">
-
       <article className="article">
-
       <div className="article-subcontainer">
         <div className="header">
           <h1>Request Form</h1>
         </div>
         <form className="form" action="" onSubmit={formik.handleSubmit}>
-          {/* <input className="input input-name" placeholder="Name" id="name" type="text" /> */}
           <label className="label">Opensea profile URL</label>
           <input 
             id="opensea"
@@ -43,7 +61,7 @@ const requestForm = () => {
             onChange={formik.handleChange} 
             onBlur={formik.handleBlur}
             />
-
+  
               {
               formik.touched.opensea && formik.errors.opensea ? 
               <div className="FFFFFFFFFFF"> 
