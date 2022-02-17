@@ -1,6 +1,7 @@
 import React from 'react';
-// import NavbarAdmin from '../../components/NavbarAdmin'
+import AdminNavbar from '../../components/AdminNavbar'
 
+// import NavbarAdmin from '../../components/NavbarAdmin'
 const data = [
     {
         id: 1,
@@ -44,8 +45,8 @@ const page = () => {
         <section className="admin_main-container">
             {/* <NavbarAdmin/> */}
             <div className="main-container">
-
                 <div className="user-navigation">
+                    {/* <AdminNavbar/> */}
                     <div className="user-navigation_info">
                         <h3>Users</h3>
                     <div className="users-pagination">

@@ -91,7 +91,7 @@ const navbar = ({ classStaking, classShop }) => {
                 justify-content: space-between;
                 align-items: center;
             }
-            ul{
+            .nav-item{
                 display: flex;
                 justify-content: space-around;
                 background-color: white;
@@ -149,8 +149,6 @@ const navbar = ({ classStaking, classShop }) => {
                 .container-nav{
                     display: none;
                     z-index:149;
-                    li{
-                    }
                 }
                 
                 .container-boton{
@@ -162,6 +160,31 @@ const navbar = ({ classStaking, classShop }) => {
                     transform:translateY(-100%);
                     width:100%;
                 }
+                .nav-item{
+                    position: relative;
+                    top: 450px;
+                    display: flex;
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    width: 50% !important;
+                    background: none !important;
+                    margin: 15px auto;
+                }
+                .nav-item li{
+                    background-color: white;
+                    border-radius: 15px;
+                    padding: 15px 0;
+                    margin: 15px 0;
+                }
+
+                .nav-item li a{
+                    background: none;
+                    color: rgb(0,0,0);
+                }
+                .nav-active{
+                    background: none;
+                    border: none;
+                }
                 .translate{
                     transform:translateY(0);
                 }
@@ -171,6 +194,9 @@ const navbar = ({ classStaking, classShop }) => {
                     flex-direction:column;
                     justify-content:space-between;
                     align-items:center;
+                }
+                .redes{
+                    display: none;
                 }
             }
         `}</style>

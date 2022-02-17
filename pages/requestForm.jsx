@@ -64,8 +64,8 @@ const requestForm = () => {
   
               {
               formik.touched.opensea && formik.errors.opensea ? 
-              <div className="FFFFFFFFFFF"> 
-              <p className="AAAAAAAAAAAAAAAA">{formik.errors.opensea}</p> 
+              <div className="form-error_container"> 
+              <p className="form-error">{formik.errors.opensea}</p> 
               </div>
               : 
               null
@@ -83,8 +83,8 @@ const requestForm = () => {
             />
             {
               formik.touched.discord && formik.errors.discord ? 
-              <div className="FFFFFFFFFFFFFF"> 
-              <p className="AAAAA">{formik.errors.discord}</p> 
+              <div className="form-error_container"> 
+              <p className="form-error">{formik.errors.discord}</p> 
               </div>
               : 
               null
