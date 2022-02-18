@@ -3,6 +3,7 @@ import '../styles/staking.scss'
 import '../styles/connectpage.scss'
 import '../styles/admin.scss'
 import '../styles/requestform.scss'
+import '../styles/nav.scss'
 
 import { ApolloProvider } from '@apollo/client'
 import client from '../config/apollo'

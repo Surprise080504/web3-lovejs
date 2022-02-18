@@ -23,16 +23,6 @@ $active-light: rgb(159, 47, 167);
     font-family: 'Poppins', sans-serif;
 }
 
-.logo{
-    left:15px;
-    width: 120px;
-    height: 120px;
-    background: url('../public/images/backgrounds/logo.gif');
-    background-size: cover;
-    background-position: center;
-    z-index:160;
-}
-
 main{
     z-index: 50;
     height: 100vh;
@@ -205,63 +195,64 @@ main{
 
     //Globales
 
-    .nav-active{
-        margin-top:5px;
-        border-bottom:rgb(140, 0, 175) solid 5px;
-    }
+    // .nav-active{
+    //     margin-top:5px;
+    //     border-bottom:rgb(140, 0, 175) solid 5px;
+    // }
     
-    .container-boton{
-        display:none;
-        z-index:160;
-        margin-right:15px;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border: 3px solid white;
+    // .container-boton{
+    //     display:none;
+    //     z-index:160;
+    //     margin-right:15px;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 40px;
+    //     height: 40px;
+    //     border: 3px solid white;
 
-    }
+    // }
     
-    .container-boton .boton{
-        background-color: white;
-        width: 30px;
-        height: 5px;
-        border-radius: 50cm;
-    }
-    .container-boton .boton::before,
-    .container-boton .boton::after{
-        content: '';
-        position: absolute;
-        background-color: white;
-        width: 30px;
-        height: 5px;
-        border-radius: 50cm;
-        transition: 300ms ease;
-    }
-    .container-boton .boton::before{
-        transform: translateY(11px);
-    }
-    .container-boton .boton::after{
-        transform: translateY(-11px);
-    }
-    .container-boton.active .boton{
-      background:transparent;
-    }
+    // .container-boton .boton{
+    //     background-color: white;
+    //     width: 30px;
+    //     height: 5px;
+    //     border-radius: 50cm;
+    // }
+    // .container-boton .boton::before,
+    // .container-boton .boton::after{
+    //     content: '';
+    //     position: absolute;
+    //     background-color: white;
+    //     width: 30px;
+    //     height: 5px;
+    //     border-radius: 50cm;
+    //     transition: 300ms ease;
+    // }
+    // .container-boton .boton::before{
+    //     transform: translateY(11px);
+    // }
+    // .container-boton .boton::after{
+    //     transform: translateY(-11px);
+    // }
+    // .container-boton.active .boton{
+    //   background:transparent;
+    // }
     
-    .container-boton.active .boton::before{
-        transform: rotate(45deg);
-    }
+    // .container-boton.active .boton::before{
+    //     transform: rotate(45deg);
+    // }
     
-    .container-boton.active .boton::after{
-        transform: rotate(-45deg);
-    }
+    // .container-boton.active .boton::after{
+    //     transform: rotate(-45deg);
+    // }
 
     @media (max-width:1024px){
-        .container-boton{
-            display:flex;
-        }
+        // .container-boton{
+        //     display:flex;
+        // }
         main{
-            height: 160vh !important;
+            // height: 160vh !important;
+            height: 100%;
         }
         .container-love{
             margin: 0 auto;
@@ -305,6 +296,7 @@ main{
                 left: 0 !important;
                 top: 0 !important;
                 text-align: center !important;
+                margin-bottom: 10px !important;
                 li{
                     width: 80%;
                     padding-left: 0;
@@ -318,7 +310,7 @@ main{
             }
         }
         .nft-container{
-            top: 15px !important;
+            top: 0px !important;
             padding: 0 !important;
             height: 78vh !important;
             margin: 0 auto !important;

@@ -222,6 +222,41 @@ const navbar = ({ classStaking, classShop }) => {
                     display: none;
                 }
             }
+            @media (max-height:900px){
+                .responsive-nav_container{
+                    height: 75vh !important;
+                }
+            }
+            @media (max-height:850px){
+                .responsive-nav_container{
+                    height: 80vh !important;
+                }
+            }
+            @media (max-height:670px){
+                .responsive-nav_container{
+                    height: 100vh; 
+                }
+            }
+            @media (max-height:650px){
+                .responsive-nav_container{
+                    height: 114vh; 
+                }
+            }
+            @media (max-height:570px){
+                .responsive-nav_container{
+                    height: 126vh; 
+                }
+            }
+            @media (max-height:515px){
+                .responsive-nav_container{
+                    height: 145vh; 
+                }
+            }
+            @media (max-height:450px){
+                .responsive-nav_container{
+                    height: 150vh; 
+                }
+            }
         `}</style>
         </nav>
     )
