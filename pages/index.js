@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Image from 'next/image'
 import Metamask from '../public/images/wallets/metamask.webp'
 import Coinbase from '../public/images/wallets/coinbase.png'
@@ -10,18 +10,25 @@ export default function Home() {
 
   const [address, setAddress] = useState([]);
 
+  useEffect(() => {
+    if(localStorage.getItem('address')){
+      router.push(`/requestform`)
+    }
+  }, [])
+      
+
   const connectToMetamask = async (e) => {
     e.preventDefault();
     window.ethereum ?
       ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
         setAddress(accounts[0])
-        router.push(`/requestForm`)
+        localStorage.setItem('address', accounts[0])
+        router.push(`/requestform`)
       }).catch((err) => console.log(err))
       : console.log("Please install MetaMask")
   }
   console.log(address)
 
-  //Send address with useContext to the server
 
 
   return (

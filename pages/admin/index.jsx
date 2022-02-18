@@ -1,7 +1,12 @@
 import React from 'react';
 import AdminNavbar from '../../components/AdminNavbar'
+import { gql, useMutation } from '@apollo/client'
 
 // import NavbarAdmin from '../../components/NavbarAdmin'
+
+
+
+
 const data = [
     {
         id: 1,
@@ -40,7 +45,23 @@ const data = [
         createAt: "16/05",
     }
 ]
+
+const NEW_ACCOUNT = gql`
+  mutation nuevoUsuario($input: UsuarioInput) {
+    nuevoUsuario(input: $input) {
+      discord
+      opensea
+      rol
+    }
+  }
+`;
+
+
+
 const page = () => {
+    
+
+
     return (
         <section className="admin_main-container">
             {/* <NavbarAdmin/> */}

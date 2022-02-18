@@ -1,32 +1,50 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useMutation, gql, useQuery } from '@apollo/client'
+import Router from 'next/router';
 
 
 const NEW_ACCOUNT = gql`
+
   mutation nuevoUsuario($input: UsuarioInput) {
     nuevoUsuario(input: $input) {
       discord
       opensea
+      rol
     }
   }
 `;
 
+
 const requestForm = () => {
+  
+  useEffect (() => {
+    if(localStorage.getItem('address') === null){
+      Router.push('/');
+    }
+  }, [])
+
+  useEffect (() => {
+    if(localStorage.getItem('registrado') === 'true'){
+      Router.push('/shop');
+    }
+  }, [])
+
+
   const [ nuevoUsuario ] = useMutation(NEW_ACCOUNT);
   //Validacion de formulario y cuenta
   const formik = useFormik({
     initialValues: {
       opensea:'',
-      discord:''
+      discord:'',
     },
     validationSchema: Yup.object({
       opensea: Yup.string().required('Opensea URL is required'),
       discord: Yup.string().required('DiscordTag is required'),
     }),
     onSubmit: async values => {
-      const { discord, opensea } = values
+      const { discord, opensea, rol } = values
       try{
         console.log({data})
         const { data } = await nuevoUsuario({
@@ -34,10 +52,18 @@ const requestForm = () => {
             input: {
               opensea,
               discord,
+              rol:'user'
             }
           }
         });
         console.log(data)
+        let send = true;
+        //Almacenamos si este usuario ya envio informacion
+        console.log(send)
+        if(send){
+          localStorage.setItem('registrado', send)
+        }
+
       }catch(error){
         console.log(' error ',error);
       }
