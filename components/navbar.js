@@ -146,6 +146,13 @@ const navbar = ({ classStaking, classShop }) => {
             
                     
             @media(max-width:1024px){
+                .logo{
+                    width: 50px;
+                    height: 50px;
+                }
+                nav{
+                    height: 50px !important;
+                }
                 .container-nav{
                     display: none;
                     z-index:149;
@@ -153,7 +160,23 @@ const navbar = ({ classStaking, classShop }) => {
                 
                 .container-boton{
                     display: flex;
+                    width: 30px !important;
+                    height: 30px !important;
                     z-index:250;
+                    border: 2px solid white;
+                }
+                .boton:before{
+                    width: 20px !important;
+                    height: 4px !important;
+                }
+                .boton:after{
+                    margin: 0 !important;
+                    width: 20px !important;
+                    height: 4px !important;
+                }
+                .boton{
+                    width: 20px !important;
+                    height: 4px !important;
                 }
                 .responsive-nav_container{
                     display:flex;

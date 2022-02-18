@@ -1,5 +1,5 @@
 import React from 'react';
-import AdminNavbar from '../../components/AdminNavbar'
+// import AdminNavbar from '../../components/AdminNavbar'
 
 // import NavbarAdmin from '../../components/NavbarAdmin'
 const data = [
@@ -43,33 +43,37 @@ const data = [
 const page = () => {
     return (
         <section className="admin_main-container">
-            {/* <NavbarAdmin/> */}
-            <div className="main-container">
-                <div className="user-navigation">
-                    {/* <AdminNavbar/> */}
-                    <div className="user-navigation_info">
-                        <h3>Users</h3>
+            <div className="user-navigation">
+                <div className="user-navigation_info">
+                    <h3>Users</h3>
                     <div className="users-pagination">
-                    <button className="user-previous">Previous</button>
-                    <button className="user-next">Next</button>
+                        <button className="user-previous">Previous</button>
+                        <button className="user-next">Next</button>
                     </div>
+                    <div className="users-search-btn_container">
+                        <input placeholder="Search.." className="users-search-btn" type="text" />
                     </div>
+                </div>
+                <div className="users">
                     <a className="user_a" href="#">#{data[0].id} - {data[0].name}</a>
                     <a className="user_a" href="#">#{data[1].id} - {data[1].name}</a>
                     <a className="user_a" href="#">#{data[2].id} - {data[2].name}</a>
                     <a className="user_a" href="#">#{data[3].id} - {data[3].name}</a>
                 </div>
-                <div className="user-info">
-                    <div className="info-container">
+            </div>
+            <div className="user-info">
+                <div className="info-container">
 
-                    <h2 className="user-data user-data user-name">NAME: <label>{data[0].name}</label></h2>
-                    <h3 className="user-data user-id">ID: <label>{data[0].id}</label></h3>
-                    <p className="user-data user-discord">DISCORD: <label>{data[0].discord}</label></p>
-                    <p className="user-data user-opensea">OPENSEA: <label>{data[0].opensea}</label></p>
-                    <p className="user-data user-role">ROLE: <label>{data[0].role}</label></p>
-                    <p className="user-data user-wallet">WALLET: <label>{data[0].wallet}</label></p>
-                    <p className="user-data user-createAt">ACCOUNT CREATED AT: <label>{data[0].createAt}</label></p>
+                    <h2 className="user-data user-data user-name">NAME: <label> {data[0].name}</label></h2>
+                    <h3 className="user-data user-id">ID: <label> {data[0].id}</label></h3>
+                    <p className="user-data user-discord">DISCORD: <label> {data[0].discord}</label></p>
+                    <p className="user-data user-opensea">OPENSEA: <label> {data[0].opensea}</label></p>
+                    <p className="user-data user-role">ROLE: <label> {data[0].role}</label></p>
+                    <p className="user-data user-wallet">WALLET: <label> {data[0].wallet}</label></p>
+                    <p className="user-data user-createAt">ACCOUNT CREATED AT: <label> {data[0].createAt}</label></p>
+                    <div className="info-btns">
                     <button className="user-data ban-btn" id="ban">BAN</button>
+                    <button className="user-data allow-btn" id="ban">Allow User</button>
                     </div>
                 </div>
             </div>
