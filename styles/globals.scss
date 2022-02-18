@@ -251,7 +251,8 @@ main{
         //     display:flex;
         // }
         main{
-            height: 160vh !important;
+            // height: 160vh !important;
+            height: 100%;
         }
         .container-love{
             margin: 0 auto;
@@ -295,6 +296,7 @@ main{
                 left: 0 !important;
                 top: 0 !important;
                 text-align: center !important;
+                margin-bottom: 10px !important;
                 li{
                     width: 80%;
                     padding-left: 0;
@@ -308,7 +310,7 @@ main{
             }
         }
         .nft-container{
-            top: 15px !important;
+            top: 0px !important;
             padding: 0 !important;
             height: 78vh !important;
             margin: 0 auto !important;
