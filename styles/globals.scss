@@ -267,16 +267,18 @@ main{
             margin: 0 auto;
             .text-container{
                 text-align: center;
-                padding: 25px 0 0 0 !important;
+                align-items: center !important;
+                padding: 0 !important;
+                // padding: 25px 0 0 0 !important;
                 height: 100% !important;
                 h1{
-                    font-size: 2rem !important;
+                    font-size: 3rem !important;
                 }
                 p{
-                    width: 75% !important;
+                    width: 90% !important;
                     text-align: center;
                     margin: auto;
-                    font-size: 15px !important;
+                    font-size: 1.15rem !important;
                 }
             }
         }
@@ -297,6 +299,7 @@ main{
 
                 // padding: 0 !important;
                 // margin: 0 !important;
+                // position: relative !important;
                 margin: 0 auto;
                 width: 75% !important;
                 left: 0 !important;
@@ -341,10 +344,10 @@ main{
         .container-love{
             .text-container{
                 h1{
-                    font-size: 2rem !important;
+                    font-size: 1.5rem !important;
                 }
                 p{
-                    font-size: 14px !important;
+                    font-size: 0.8rem !important;
                 }
             }
         }
